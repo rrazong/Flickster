@@ -7,10 +7,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ivMovieImage"
-        android:layout_alignParentTop="true"
+        tools:src="@mipmap/ic_launcher"
+        android:padding="5dp"
+        android:background="#AB47BC"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        tools:src="@mipmap/ic_launcher"/>
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,7 +25,10 @@
         android:id="@+id/tvTitle"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivMovieImage"
-        android:layout_toEndOf="@+id/ivMovieImage" />
+        android:layout_toEndOf="@+id/ivMovieImage"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,6 +38,9 @@
         android:id="@+id/tvOverview"
         android:layout_below="@+id/tvTitle"
         android:layout_toRightOf="@+id/ivMovieImage"
-        android:layout_toEndOf="@+id/ivMovieImage" />
+        android:layout_toEndOf="@+id/ivMovieImage"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        />
 
 </RelativeLayout>

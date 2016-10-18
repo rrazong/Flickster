@@ -12,7 +12,7 @@ The following **required** functionality is completed:
 * [x] Layout is optimized with the [ViewHolder](http://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView#improving-performance-with-the-viewholder-pattern) pattern.
 * [ ] For each movie displayed, user can see the following details:
   * [x] Title, Poster Image, Overview (Portrait mode)
-  * [ ] Title, Backdrop Image, Overview (Landscape mode)
+  * [x] Title, Backdrop Image, Overview (Landscape mode)
 
 The following **optional** features are implemented:
 
@@ -34,7 +34,7 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [ ] Used <include> and <merge>.  Moved the ListView into a separate layout file and then included it in the portrait tand landscape layouts.
 
 ## Video Walkthrough
 

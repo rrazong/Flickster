@@ -10,8 +10,12 @@ import java.util.ArrayList;
  * Created by richellerazon on 10/16/16.
  */
 public class Movie {
-    public String getPosterPath() {
+    public String getPosterUrl() {
         return String.format("https://image.tmdb.org/t/p/w342%s", posterPath);
+    }
+
+    public String getBackdropUrl() {
+        return String.format("https://image.tmdb.org/t/p/w780%s", backdropPath);
     }
 
     public String getOriginTitle() {
@@ -23,11 +27,13 @@ public class Movie {
     }
 
     String posterPath;
+    String backdropPath;
     String originTitle;
     String overview;
 
     public Movie(JSONObject jsonObject) throws JSONException {
         this.posterPath = jsonObject.getString("poster_path");
+        this.backdropPath = jsonObject.getString("backdrop_path");
         this.originTitle = jsonObject.getString("original_title");
         this.overview = jsonObject.getString("overview");
     }

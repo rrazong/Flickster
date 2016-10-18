@@ -1,7 +1,7 @@
 package com.example.richellerazon.flickster.adapters;
 
 import android.content.Context;
-import android.util.Log;
+import android.content.res.Configuration;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,9 +29,10 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
         Movie movie = getItem(position);
+        int orientation = getContext().getResources().getConfiguration().orientation;
+        String imageUrl;
 
         if (convertView == null) {
-            Log.d("RRR", String.format("creating new VH for position %d", position));
             viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item_movie, parent, false);
@@ -39,15 +40,21 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
             viewHolder.tvTitle   = (TextView) convertView.findViewById(R.id.tvTitle);
             viewHolder.tvOverview = (TextView) convertView.findViewById(R.id.tvOverview);
             viewHolder.ivImage = (ImageView) convertView.findViewById(R.id.ivMovieImage);
+            viewHolder.ivImage.setImageResource(0);
 
             convertView.setTag(viewHolder);
         } else {
-            Log.d("RRR", String.format("recyling for position %d", position));
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        viewHolder.ivImage.setImageResource(0);
-        Picasso.with(getContext()).load(movie.getPosterPath()).into(viewHolder.ivImage);
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            imageUrl = movie.getPosterUrl();
+
+        } else {
+            imageUrl = movie.getBackdropUrl();
+
+        }
+        Picasso.with(getContext()).load(imageUrl).into(viewHolder.ivImage);
 
         viewHolder.tvTitle.setText(movie.getOriginTitle());
         viewHolder.tvOverview.setText(movie.getOverview());
