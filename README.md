@@ -2,7 +2,7 @@
 
 **Flickster** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Time spent: **3** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
@@ -18,7 +18,7 @@ The following **optional** features are implemented:
 
 * [ ] User can **pull-to-refresh** popular stream to get the latest movies.
 * [ ] Display a nice default [placeholder graphic](http://guides.codepath.com/android/Displaying-Images-with-the-Picasso-Library#configuring-picasso) for each image during loading.
-* [ ] Improved the user interface through styling and coloring.
+* [x] Improved the user interface through styling and coloring.
 
 The following **bonus** features are implemented:
 
@@ -34,14 +34,14 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] Used <include> and <merge>.  Moved the ListView into a separate layout file and then included it in the portrait tand landscape layouts.
+* [x] Used &lt;include&gt; and &lt;merge&gt;.  Moved the ListView into a separate layout file and then included it in the portrait tand landscape layouts.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="GDzwyMl"><a href="//imgur.com/GDzwyMl"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
