@@ -40,9 +40,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<blockquote class="imgur-embed-pub" lang="en" data-id="GDzwyMl"><a href="//imgur.com/GDzwyMl"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='https://github.com/rrazong/Flickster/blob/master/FlicksterDemo2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 ## Notes
 
